@@ -37,7 +37,7 @@
     <script src="./lib/leaflet.js"></script>
     <script src='./src/src.js'></script>
     <script>
-        var lrmap = L.map('map').setView([5, 123 ], 2);
+        var lrmap = L.map('map').setView([5, 123 ], 4);
         L.tileLayer('https://api.tiles.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw')
         .addTo(lrmap);
         var LeafIcon = L.Icon.extend({
@@ -56,7 +56,7 @@
     
         
 var popup = L.popup()
-   .setLatLng([105.51,21.2])
+   .setLatLng([21.2,105.51])
    .setContent('<iframe src="https://plotdb.io/v/chart/22509" width="250px" height="200" allowfullscreen="true" frameborder="0"></iframe><br>馬來西亞2014及2015年案例')
    .openOn(lrmap)
         var data =[{"from":[121.9,-8.5],"to":[120.5,22.5],"labels":["印尼","台灣"],"color":"#d80a0a","stroke":25}
